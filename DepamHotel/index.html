@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11100e" />
+  <meta name="description" content="Depam Hotel — memorable flavours, thoughtfully served." />
+  <title>Depam Hotel | Suvai Tharum Nichayam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading Depam Hotel">
+    <div class="loader-mark">D<span>H</span></div>
+    <p>SETTING THE TABLE</p>
+    <div class="loader-line"><span></span></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Depam Hotel home"><span class="brand-icon">D<span>H</span></span><span class="brand-name">DEPAM <small>HOTEL</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#contact">Visit Us</a>
+    </nav>
+    <button class="cart-trigger" id="cartTrigger" aria-label="Open your cart">Your order <span class="cart-count" id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Beautifully presented gourmet food"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> A LITTLE TASTE OF SOMETHING SPECIAL</p>
+        <h1>Flavours that<br /><em>stay with you.</em></h1>
+        <p class="hero-copy">Tradition on the plate. A little magic in every bite.<br class="desktop-only" /> Come hungry, leave with a story.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#menu">Explore the menu <span>↗</span></a><a class="text-link" href="#story">Discover our story <span>↓</span></a></div>
+      </div>
+      <div class="hero-note"><span class="note-line"></span><span>MADE WITH HEART · SERVED WITH SOUL</span></div>
+      <div class="hero-index">01 <span>/</span> 03</div>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <div class="intro-label reveal"><span class="eyebrow">WELCOME TO DEPAM</span><span class="vertical-line"></span><span class="muted-small">GOOD FOOD. GOOD FEELINGS.</span></div>
+      <div class="intro-copy reveal"><h2>Not just a meal.<br /><em>A moment to savour.</em></h2><p>At Depam Hotel, every dish brings together familiar comfort, fresh ingredients and a touch of care. Whether it is a quick lunch or a meal with your favourite people, there is always a place for you at our table.</p><a href="#menu" class="under-link">Find your favourite <span>↗</span></a></div>
+      <div class="intro-stamp" aria-hidden="true"><span>EST.</span><strong>DH</strong><span>MADE WITH LOVE</span></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading reveal"><div><p class="eyebrow">A FEW HOUSE FAVOURITES</p><h2>Made to be <em>enjoyed.</em></h2></div><p>Find your craving. Add it to your order.<br />We’ll take it from there.</p></div>
+      <div class="menu-toolbar reveal"><div class="filter-list" id="filterList" aria-label="Filter menu"><button class="filter-chip active" data-category="All">All dishes</button><button class="filter-chip" data-category="Mains">Mains</button><button class="filter-chip" data-category="Starters">Starters</button><button class="filter-chip" data-category="Drinks">Drinks</button><button class="filter-chip" data-category="Desserts">Desserts</button></div><label class="search-box"><span>⌕</span><input id="menuSearch" type="search" placeholder="Find a dish..." aria-label="Search menu" /></label></div>
+      <div class="food-grid" id="foodGrid" aria-live="polite"></div>
+      <div class="menu-bottom"><p>Freshly prepared. Happily shared.</p><button class="button button-outline" id="viewOrderBottom">Review your order <span>↗</span></button></div>
+    </section>
+
+    <section class="quote-band"><div class="quote-image"></div><div class="quote-overlay"></div><div class="quote-content reveal"><p class="eyebrow">THE DEPAM PROMISE</p><h2>“Suvai tharum<br /><em>nichayam.</em>”</h2><p>Good ingredients. Thoughtful cooking. A warm welcome, every time.</p></div><span class="quote-number">02 — THE EXPERIENCE</span></section>
+
+    <section class="order-section section-pad" id="order">
+      <div class="order-intro reveal"><p class="eyebrow">YOUR TABLE, YOUR WAY</p><h2>Ready when<br /><em>you are.</em></h2><p>Build your order from our menu. You can change quantities or remove anything before continuing.</p><button class="button button-gold" id="startOrder">Start your order <span>↗</span></button></div>
+      <div class="order-preview reveal"><div class="preview-top"><span>YOUR ORDER</span><span class="live-dot">● LIVE</span></div><div id="previewItems" class="preview-items"><p class="empty-note">Your delicious choices will appear here.</p></div><div class="preview-total"><span>Estimated total</span><strong id="previewTotal">₹0</strong></div><button class="button button-light" id="openCartFromPreview">Review order <span>↗</span></button><p class="tiny-note">Demo website · No payment is collected.</p></div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact"><div class="contact-main reveal"><p class="eyebrow">COME ON IN</p><h2>There’s always<br /><em>room at our table.</em></h2><p>Bring your appetite. We’ll bring the flavour.</p></div><div class="contact-details reveal"><div><span class="detail-label">FIND US</span><p>Depam Hotel<br />Add your restaurant address here</p></div><div><span class="detail-label">OPENING HOURS</span><p>Monday – Sunday<br />9:00 AM – 10:00 PM</p></div><div><span class="detail-label">GET IN TOUCH</span><p>+91 XXXXX XXXXX<br />hello@depamhotel.example</p></div></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-icon">D<span>H</span></span><span class="brand-name">DEPAM <small>HOTEL</small></span></a><p>Good food. Good feelings.</p><span>© <span id="year"></span> Depam Hotel. Made with care.</span></footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your order" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">DEPAM HOTEL</p><h2>Your <em>order.</em></h2></div><button class="icon-button" id="closeCart" aria-label="Close cart">×</button></div>
+    <div class="drawer-body" id="cartItems"><div class="cart-empty"><span>✳</span><h3>Something delicious?</h3><p>Your cart is waiting for its first dish.</p><button class="under-link" id="browseMenu">Browse the menu ↗</button></div></div>
+    <div class="drawer-footer"><div class="subtotal-row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p class="tiny-note">Taxes and delivery, if applicable, are not included in this demo.</p><button class="button button-gold full-button" id="proceedButton">Continue <span>↗</span></button><button class="clear-cart" id="clearCart">Clear order</button></div>
+  </aside>
+
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <section class="order-modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <button class="icon-button modal-close" id="closeModal" aria-label="Close">×</button>
+    <div class="modal-symbol">✳</div><p class="eyebrow">ONE LAST LOOK</p><h2 id="modalTitle">Your table is<br /><em>almost ready.</em></h2><p class="modal-copy">Check your selected dishes before continuing.</p>
+    <div id="modalSummary" class="modal-summary"></div><div class="modal-total"><span>Order total</span><strong id="modalTotal">₹0</strong></div>
+    <div class="modal-actions"><button class="button button-gold full-button" id="confirmOrder">Confirm demo order <span>↗</span></button><button class="button button-outline full-button" id="editOrder">Edit my order</button><button class="cancel-order" id="cancelOrder">Cancel and return home</button></div>
+    <p class="tiny-note center-note">This is a front-end demo. It does not send an order to a real restaurant.</p>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="assistant-fab" id="assistantFab" aria-label="Open Depam helper"><span>✳</span><small>Need a hand?</small></button>
+  <section class="assistant-panel" id="assistantPanel" aria-label="Depam menu helper" aria-hidden="true"><div class="assistant-head"><div class="assistant-avatar">D</div><div><strong>Depam Guide</strong><span><i></i> Menu helper</span></div><button class="icon-button" id="closeAssistant" aria-label="Close helper">×</button></div><div class="assistant-messages" id="assistantMessages"><div class="assistant-bubble">Vanakkam! 👋 Welcome to Depam Hotel. I can help you explore the menu. What are you in the mood for?</div></div><div class="quick-replies"><button data-reply="Mains">Main dishes</button><button data-reply="Drinks">Drinks</button><button data-reply="popular">Popular picks</button></div><form class="assistant-form" id="assistantForm"><input id="assistantInput" placeholder="Ask about the menu..." aria-label="Ask the menu helper" /><button aria-label="Send message">↑</button></form><p class="assistant-disclaimer">Automated demo helper · not a live AI service</p></section>
+</body>
+</html>
